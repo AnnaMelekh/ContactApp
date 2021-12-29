@@ -91,6 +91,10 @@
                         <viewLayoutGuide key="safeArea" id="TsI-Mu-smY"/>
                     </view>
                     <navigationItem key="navigationItem" title="title" largeTitleDisplayMode="always" id="bKO-Li-npF"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="rcN-61-Jwp" id="3bo-DT-DqS"/>
+                        <outlet property="phoneLabel" destination="vbx-ca-jLU" id="YlX-P5-XYI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIT-Ty-muh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

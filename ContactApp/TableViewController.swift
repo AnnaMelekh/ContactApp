@@ -18,11 +18,16 @@ class TableViewController: UIViewController {
     override func viewDidLoad() {
         tableView.dataSource = self
         super.viewDidLoad()
-createPerson()
-        
+        createPerson()
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let infoVC = segue.destination as? InfoViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else  { return }
         
+        let person = persons[indexPath.row]
+        infoVC.person = person
+    }
 }
 
 extension TableViewController: UITableViewDataSource {

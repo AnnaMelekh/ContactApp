@@ -10,12 +10,22 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet var phoneLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+    
+    var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        self.title = "\(person.name) \(person.surname)"
+        
+        phoneLabel.text = person.phone
+        emailLabel.text = person.email
+        
     }
     
 
-    
+
+
 }
