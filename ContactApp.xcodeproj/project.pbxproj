@@ -16,6 +16,7 @@
 		8D13C68E277CE0320079606A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D13C68D277CE0320079606A /* DataManager.swift */; };
 		8D13C690277CE1F10079606A /* PersonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D13C68F277CE1F10079606A /* PersonsModel.swift */; };
 		8D13C694277CFE4D0079606A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D13C693277CFE4D0079606A /* InfoViewController.swift */; };
+		8D13C696277D12AF0079606A /* SectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D13C695277D12AF0079606A /* SectionListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8D13C68D277CE0320079606A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8D13C68F277CE1F10079606A /* PersonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsModel.swift; sourceTree = "<group>"; };
 		8D13C693277CFE4D0079606A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		8D13C695277D12AF0079606A /* SectionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				8D13C679277CD4480079606A /* AppDelegate.swift */,
 				8D13C67B277CD4480079606A /* SceneDelegate.swift */,
+				8D13C695277D12AF0079606A /* SectionListViewController.swift */,
 				8D13C67D277CD4480079606A /* TableViewController.swift */,
 				8D13C693277CFE4D0079606A /* InfoViewController.swift */,
 				8D13C67F277CD4480079606A /* Main.storyboard */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D13C67E277CD4480079606A /* TableViewController.swift in Sources */,
+				8D13C696277D12AF0079606A /* SectionListViewController.swift in Sources */,
 				8D13C68E277CE0320079606A /* DataManager.swift in Sources */,
 				8D13C67A277CD4480079606A /* AppDelegate.swift in Sources */,
 				8D13C690277CE1F10079606A /* PersonsModel.swift in Sources */,

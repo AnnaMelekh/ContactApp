@@ -18,6 +18,7 @@ class TableViewController: UIViewController {
     override func viewDidLoad() {
         tableView.dataSource = self
         super.viewDidLoad()
+        tableView.rowHeight = 85
         createPerson()
     }
     
@@ -28,6 +29,18 @@ class TableViewController: UIViewController {
         let person = persons[indexPath.row]
         infoVC.person = person
     }
+    
+    private func prepare2 (for segue: UIStoryboardSegue, sender: Any?) {
+     let tabBarController = segue.destination as! UITabBarController
+    
+     let viewControllers = tabBarController.viewControllers
+     
+     for viewController in viewControllers! {
+     if let sectionVC = viewController as? SectionListViewController {
+        sectionVC.persons = persons 
+         }
+     }
+    }
 }
 
 extension TableViewController: UITableViewDataSource {
@@ -37,6 +50,7 @@ extension TableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
+        
         
         let person = persons[indexPath.row]
         cell.textLabel?.text = "\(person.name)  \(person.surname)"
@@ -63,6 +77,4 @@ for _ in 1...names.count {
 }
 
 
-//override func numberOfSections(in tableView: UITableView) -> Int {
-//    2
-//}
+
